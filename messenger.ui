@@ -11,20 +11,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>pyQT messenger</string>
-  </property>
-  <property name="windowOpacity">
-   <double>1.000000000000000</double>
-  </property>
-  <property name="unifiedTitleAndToolBarOnMac">
-   <bool>false</bool>
+   <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="sendButton">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>500</y>
+      <x>40</x>
+      <y>460</y>
       <width>141</width>
       <height>51</height>
      </rect>
@@ -33,37 +27,49 @@
      <string>send</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="messageLine">
     <property name="geometry">
      <rect>
       <x>250</x>
-      <y>500</y>
+      <y>410</y>
       <width>521</width>
-      <height>30</height>
+      <height>81</height>
      </rect>
     </property>
+    <property name="placeholderText">
+     <string>enter message text</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit2">
+   <widget class="QLineEdit" name="nameLine">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>400</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string extracomment="name"/>
+    </property>
+    <property name="inputMask">
+     <string extracomment="name"/>
+    </property>
+    <property name="placeholderText">
+     <string> enter your name</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="messageList">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>430</y>
-      <width>201</width>
-      <height>31</height>
+      <y>30</y>
+      <width>741</width>
+      <height>351</height>
      </rect>
-    </property>
-   </widget>
-   <widget class="QListWidget" name="listWidget">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>20</y>
-      <width>581</width>
-      <height>341</height>
-     </rect>
-    </property>
-    <property name="toolTip">
-     <string extracomment="type here"/>
     </property>
    </widget>
   </widget>
